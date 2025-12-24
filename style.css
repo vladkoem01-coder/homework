@@ -1,0 +1,113 @@
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #EFF6FF;
+  color: #2A4A5C;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== Layout ===== */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-card {
+  display: flex;
+  max-width: 1100px;
+  background: #fff;
+}
+
+/* ===== Image column ===== */
+.image {
+  width: 50%;
+  position: relative;
+}
+
+.image img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image img.image {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80px;
+}
+
+/* ===== Form ===== */
+.form {
+  width: 50%;
+  padding: 50px;
+}
+
+/* ===== Header ===== */
+.first h1 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  color: #7B8A92;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #96A5B1;
+  margin-bottom: 30px;
+}
+
+/* ===== Social buttons ===== */
+.button\.facebook,
+.button\.linkedin {
+  width: 100%;
+  padding: 12px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.button\.facebook {
+  background: #255A9B;
+}
+
+.button\.linkedin {
+  background: #0076B6;
+}
+
+/* ===== OR divider ===== */
+.or {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: #AFAFAF;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #EEEEEE;
+}
+
+.or span {
+  margin: 0 10px;
+}
+
+/* ===== Inputs ===== */
+.email,
+.phone {
+  margin-bottom: 15px;
+}
